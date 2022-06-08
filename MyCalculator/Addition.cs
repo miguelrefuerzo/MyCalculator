@@ -8,7 +8,7 @@ namespace MyCalculator
 {
     internal static class Addition
     {
-        public static void Additions(int x, int y) 
+        public static void Adding(int x, int y) 
         {
             int answer = x + y;
             Console.WriteLine(answer);

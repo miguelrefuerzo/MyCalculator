@@ -14,7 +14,7 @@ switch (action)
         Console.WriteLine("Number:");
         x = Convert.ToInt32(Console.ReadLine());
         y = Convert.ToInt32(Console.ReadLine());
-        Addition.Additions(x, y);
+        Addition.Adding(x, y);
         break;
     default:
         break;
