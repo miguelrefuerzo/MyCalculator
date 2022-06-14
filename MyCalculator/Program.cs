@@ -1,11 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using MyCalculator;
-char action;
+
 int x, y;
+
+UI myUI = new UI();
+myUI.UILord();
+
 Console.WriteLine("What would you like to do? \na. Add\nb. Subtract\nc. Multiply\nd. Divide");
 
-action = Console.ReadLine()[0];
-
+char action = Console.ReadLine()[0];
 
 switch (action)
 {
@@ -15,7 +18,9 @@ switch (action)
         Console.WriteLine("Number:");
         x = Convert.ToInt32(Console.ReadLine());
         y = Convert.ToInt32(Console.ReadLine());
-        Addition.Adding(x, y);
+        Addition.DisplayOutput(x, y);
+        Addition add = new Addition();
+        //add.DisplayOutput(x,y);
         break;
     case 'b':
         Console.Clear();

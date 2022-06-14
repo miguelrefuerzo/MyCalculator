@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace MyCalculator
 {
-    internal static class Addition
+    public class Addition
     {
-        public static void Adding(int x, int y) 
+        private static int Adding(int x, int y) 
         {
-            int answer = x + y;
-            Console.WriteLine(answer);
+            return x + y;
+            //int answer = x + y;
+            //Console.WriteLine(Adding(x,y));
+        }
+
+        public static void DisplayOutput(int x, int y)
+        {
+            Console.WriteLine(Adding(x,y));
         }
     }
 }

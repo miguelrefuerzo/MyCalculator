@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyCalculator
 {
-    internal class Division
+    public class UI
     {
-        public static void Dividing(double x, double y)
+        public void UILord()
         {
-            double answer = x / y;
-            Console.WriteLine(answer);
+            Console.WriteLine("Hello World!");
         }
     }
 }
